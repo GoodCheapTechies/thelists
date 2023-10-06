@@ -589,6 +589,11 @@ footer{
     h1 {
         font-size: calc(var(--base-font-size) * 1.75);
     }
+
+    #hero-section{
+        height: 45vh;
+    }
+
 }
 
 @media screen and (max-width: 376px) {

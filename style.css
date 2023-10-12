@@ -3,8 +3,7 @@
 
 /* Styleguide */
 :root{
-    --brand-color: red;
-    /*--brand-color: #EDA10C;*/
+    --brand-color: #EDA10C;
     --desaturated-gray: #F3F3F3;
     --saturated-gray: #888080;
     
@@ -103,17 +102,23 @@ h1{
     text-align: center;
 }
 
-#newsletter-form{
+#mc-embedded-subscribe-form{
     display: flex;
     flex-direction: row;
-    column-gap: 1rem;
+    column-gap: .5rem;
 }
 
-#newsletter-input, #footer-newsletter-input{
-    width: 30vw;
+#mc-embedded-subscribe-form input, #mc-embedded-subscribe-form button{
+    width: auto;
     height: auto;
-
     padding: 1rem 1.5rem;
+}
+
+#mc-embedded-subscribe-form input:nth-of-type(2){
+    width: 30vw;
+}
+
+#mc-embedded-subscribe-form input{
     background-color: var(--desaturated-gray);
     border: none;
     outline: none;
@@ -123,7 +128,7 @@ h1{
     color: var(--saturated-gray)
 }
 
-#newsletter-submit-btn{
+#mc-embedded-subscribe{
     background-color: var(--brand-color);
     color: white;
 
@@ -137,11 +142,11 @@ h1{
     cursor: pointer;
 }
 
-#newsletter-submit-btn:hover{
+#mc-embedded-subscribe:hover{
     opacity: 0.85;
 }
 
-#newsletter-submit-btn:focus{
+#mc-embedded-subscribe:focus{
     box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #3a97f9;
 }
 
@@ -386,14 +391,14 @@ footer{
     gap: 1.5rem
 }
 
-#footer-newsletter-form{
+#footer-mc-embedded-subscribe-form{
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 1.5rem;
 }
 
-#footer-newsletter-form p{
+#footer-mc-embedded-subscribe-form p{
     margin-left: 1.5rem;
     width: 50%;
 
@@ -443,7 +448,7 @@ footer{
         grid-template-rows: repeat(auto, 1fr);
     }
 
-    #footer-newsletter-form p{
+    #footer-mc-embedded-subscribe-form p{
         width: 80%;
     }
 
@@ -497,11 +502,11 @@ footer{
         align-items: center;
     }
 
-    #footer-newsletter-form{
+    #footer-mc-embedded-subscribe-form{
         align-items: center;
     }
 
-    #footer-newsletter-form p{
+    #footer-mc-embedded-subscribe-form p{
         margin-left: 0;
         width: 60%;
         text-align: left;
@@ -517,7 +522,7 @@ footer{
         width: 80vw;
     }
 
-    #footer-newsletter-form p{
+    #footer-mc-embedded-subscribe-form p{
         width: 80%;
     }
 
@@ -568,7 +573,7 @@ footer{
         font-size: calc(var(--base-font-size) * 2);
     }
 
-    #newsletter-form{
+    #mc-embedded-subscribe-form{
         flex-direction: column;
         row-gap: 1rem;
     }
@@ -594,7 +599,6 @@ footer{
     #hero-section{
         height: 45vh;
     }
-
 }
 
 @media screen and (max-width: 376px) {
